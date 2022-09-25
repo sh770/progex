@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+    background-color: black;
+}
+
+.g1{
+background-color: aqua;
+width: 25%;
+font-family: 'Open Sans', sans-serif;
+}
+
+.g2{
+background-color:blueviolet;
+width: 50%;
+font-family: 'Secular One', sans-serif;
+}
+
+.g3{
+background-color: coral;
+width: 100%;
+font-family: 'Noto Rashi Hebrew', serif;
+}
+

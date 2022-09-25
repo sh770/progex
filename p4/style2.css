@@ -1,0 +1,52 @@
+body{
+    text-align:center;
+    background-color: black;
+    direction: ltr;
+}
+
+h1{
+    font-size:5em;
+    background-color:wheat;
+    width: 50%;
+    margin:auto;
+    margin-top:5%;
+    animation: fade_in 2s;
+}
+
+@keyframes fade_in{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:100;
+    }
+
+}
+
+@keyframes color1{
+    0%{
+        background-color:aqua;
+    }
+    25%{
+        background-color:wheat;
+    }
+    50%{
+        background-color:red;
+    }
+    75%{
+        background-color:greenyellow;
+    }
+    100%{
+        background-color:aqua;
+    }
+}
+
+div{
+  
+  width: 100px;
+  border: 20px solid white;
+  padding: 5%;
+  margin: auto;
+  margin-top:10%;
+    animation:color1 5s infinite linear;
+    }

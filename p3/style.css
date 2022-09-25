@@ -1,0 +1,24 @@
+.mycenter {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    }
+
+
+/*.mydiv {
+    text-align: center;
+    margin: center;
+    padding: 10px;
+}
+*/
+
+table {
+    text-align: center;
+    border: 2px solid blue;
+    background-color: bisque;
+    padding: absolute;
+    margin-left: auto;
+    margin-right: auto;
+}

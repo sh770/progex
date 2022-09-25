@@ -1,0 +1,37 @@
+#mar {
+    background-color: yellow;
+}
+
+.my1 {
+    background-color: aqua;
+    border: 2px dotted silver;
+    font-size:large;
+}
+
+.my2 {
+    background-color: rgb(255, 123, 0);
+    border: 3px double rgb(181, 142, 142);
+    font-size:small;
+}
+
+.my3 {
+    background-color: rgb(216, 42, 176);
+    border: 6px solid rgb(239, 245, 55);
+    font-size:larger;
+}
+
+.my4 {
+    background-color: rgb(42, 220, 54);
+    border: 9px groove rgb(51, 13, 203);
+    font-size:medium;
+}
+
+body {
+    text-align: center;
+    font-size: large;
+}
+#may1{
+    background-color: rgb(220, 72, 42);
+    border: 7px groove rgb(29, 235, 36);
+    font-size:bold;
+}
