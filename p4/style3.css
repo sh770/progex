@@ -1,59 +1,153 @@
-#animated_div {
-width:70px;
-height:47px;
-background: #c91f8d;
-color: #72ec0e;
-position: relative;
-font-weight:bold;
-font-size:20px;
-padding:10px;
-animation:animated_div 5s infinite;
--moz-animation:animated_div 5s infinite;
--webkit-animation:animated_div 5s infinite;
--o-animation:animated_div 5s infinite;
-border-radius:5px;
--webkit-border-radius:5px;
+.animated_div {
+    width: 70px;
+    height: 47px;
+    background: #c91f8d;
+    color: #72ec0e;
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    animation: animated_div 5s infinite;
+    -moz-animation: animated_div 5s infinite;
+    -webkit-animation: animated_div 5s infinite;
+    -o-animation: animated_div 5s infinite;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
 
-@keyframes animated_div
-{
-0% {transform: rotate(0deg);right:0px;}
-25% {transform: rotate(20deg);right:0px;}
-50% {transform: rotate(0deg);right:500px;}
-55% {transform: rotate(0deg);right:500px;}
-70% {transform: rotate(0deg);right:500px;background:#1ec7e6;}
-100% {transform: rotate(-360deg);right:0px;}
+@keyframes animated_div {
+    0% {
+        transform: rotate(0deg);
+        right: 0px;
+    }
+
+    25% {
+        transform: rotate(20deg);
+        right: 0px;
+    }
+
+    50% {
+        transform: rotate(0deg);
+        right: 500px;
+    }
+
+    55% {
+        transform: rotate(0deg);
+        right: 500px;
+    }
+
+    70% {
+        transform: rotate(0deg);
+        right: 500px;
+        background: #1ec7e6;
+    }
+
+    100% {
+        transform: rotate(-360deg);
+        right: 0px;
+    }
 }
 
-@-webkit-keyframes animated_div
-{
-0% {-webkit-transform: rotate(0deg);right:0px;}
-25% {-webkit-transform: rotate(20deg);right:0px;}
-50% {-webkit-transform: rotate(0deg);right:500px;}
-55% {-webkit-transform: rotate(0deg);right:500px;}
-70% {-webkit-transform: rotate(0deg);right:500px;background:#1ec7e6;}
-100% {-webkit-transform: rotate(-360deg);right:0px;}
+@-webkit-keyframes animated_div {
+    0% {
+        -webkit-transform: rotate(0deg);
+        right: 0px;
+    }
+
+    25% {
+        -webkit-transform: rotate(20deg);
+        right: 0px;
+    }
+
+    50% {
+        -webkit-transform: rotate(0deg);
+        right: 500px;
+    }
+
+    55% {
+        -webkit-transform: rotate(0deg);
+        right: 500px;
+    }
+
+    70% {
+        -webkit-transform: rotate(0deg);
+        right: 500px;
+        background: #1ec7e6;
+    }
+
+    100% {
+        -webkit-transform: rotate(-360deg);
+        right: 0px;
+    }
 }
 
-@-moz-keyframes animated_div
-{
-0%  {-moz-transform: rotate(0deg);right:0px;}
-25% {-moz-transform: rotate(20deg);right:0px;}
-50%  {-moz-transform: rotate(0deg);right:500px;}
-55%  {-moz-transform: rotate(0deg);right:500px;}
-70%  {-moz-transform: rotate(0deg);right:500px;background:#1ec7e6;}
-100% {-moz-transform: rotate(-360deg);right:0px;}
+@-moz-keyframes animated_div {
+    0% {
+        -moz-transform: rotate(0deg);
+        right: 0px;
+    }
+
+    25% {
+        -moz-transform: rotate(20deg);
+        right: 0px;
+    }
+
+    50% {
+        -moz-transform: rotate(0deg);
+        right: 500px;
+    }
+
+    55% {
+        -moz-transform: rotate(0deg);
+        right: 500px;
+    }
+
+    70% {
+        -moz-transform: rotate(0deg);
+        right: 500px;
+        background: #1ec7e6;
+    }
+
+    100% {
+        -moz-transform: rotate(-360deg);
+        right: 0px;
+    }
 }
 
-@-o-keyframes animated_div
-{
-0% {transform: rotate(0deg);right:0px;}
-25% {transform: rotate(20deg);right:0px;}
-50%  {transform: rotate(0deg);right:500px;}
-55%  {transform: rotate(0deg);right:500px;}
-70%  {transform: rotate(0deg);right:500px;background:#1ec7e6;}
-100% {transform: rotate(-360deg);right:0px;}
+@-o-keyframes animated_div {
+    0% {
+        transform: rotate(0deg);
+        right: 0px;
+    }
+
+    25% {
+        transform: rotate(20deg);
+        right: 0px;
+    }
+
+    50% {
+        transform: rotate(0deg);
+        right: 500px;
+    }
+
+    55% {
+        transform: rotate(0deg);
+        right: 500px;
+    }
+
+    70% {
+        transform: rotate(0deg);
+        right: 500px;
+        background: #1ec7e6;
+    }
+
+    100% {
+        transform: rotate(-360deg);
+        right: 0px;
+    }
 }
-body{
-background-color: black;
+
+body {
+    direction: rtl;
+    background-color: black;
 }
