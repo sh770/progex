@@ -1,0 +1,27 @@
+.boto{
+    background-color: red;
+}
+
+.boto:hover{
+    background-color: chartreuse;
+}
+
+.boto:active{
+    background-color: gold;
+}
+
+body{
+    text-align: center;
+}
+
+.child{
+    background-color:blueviolet;
+}
+
+.child:hover{
+    background-color:cyan;
+}
+
+.child:active{
+    background-color:rgb(243, 122, 24);
+}
