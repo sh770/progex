@@ -32,6 +32,8 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+    align-content: space-between;
+    /*align-content:stretch;*/
 }
 
 
@@ -47,5 +49,6 @@
     font-size: 50px;
     text-align: center;
     border-radius: 15%;
+    box-shadow:5px 5px coral ;
 
 }
