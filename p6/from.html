@@ -5,11 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>from</title>
+    <script>
+        localStorage.setItem("fname" , document.getElementById("fname").value);
+        localStorage.setItem("lname" , document.getElementById("lname").value);
+    </script>
 </head>
 <body>
     <div>
-        <form>
+        <form action="to.html" target="_blank" method="get">
+            <label for="fname">שם</label><br>
+            <input type="text" id="fname" placeholder="שם" name="fname"><br>
             
+            <label for="lname">משפחה</label><br>
+            <input type="text" id="lname" placeholder="משפחה" name="lname"><br>
+            <input type="submit" value="שלח">
+
         </form>
     </div>
 </body>
