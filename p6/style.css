@@ -1,0 +1,13 @@
+.card{
+    box-shadow: 5px 5px 5px 15px black;
+     
+}
+
+.card:hover{
+    box-shadow:7px 7px 3px 9px red;
+}
+
+
+.txt:active{
+    text-shadow: 9px 9px 8px red;
+}
