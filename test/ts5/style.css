@@ -19,12 +19,12 @@ h1:hover {
 }
 
 h1:active {
-    background-color:rgb(233, 164, 26);
-    border: 20px rgb(76, 226, 43);
-    border-radius: 100px red;
-}
+    background-color:aqua;
+    bottom: 6px blue;
+    }
 
 p {
+    font-size: 30px;
     font-family: 'Secular One', sans-serif;
     color: cyan;
 
