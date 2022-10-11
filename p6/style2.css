@@ -1,0 +1,10 @@
+body {
+    direction: rtl;
+    text-align: center;
+    background-color: black;
+}
+
+div {
+    padding: top 20px;
+    margin: auto;
+}

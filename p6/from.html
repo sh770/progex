@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>from</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+
     <script>
-        localStorage.setItem("fname",document.getElementById("fname").value);
-        localStorage.setItem("lname",document.getElementById("lname").value);
-        // consol.log(localStorage);
-        console.log(localStorage);
+        function savename3() {
+
+            const fname = document.getElementById("fname").value;
+            const lname = document.getElementById("lname").value;
+            const ename = document.getElementById("ename").value;
+
+            localStorage.setItem("fname", fname);
+            localStorage.setItem("lname", lname);
+            localStorage.setItem("ename", ename);
+        }
+
     </script>
 </head>
+
 <body>
     <div>
         <form action="to.html" target="_blank" method="get">
             <label for="fname">שם</label><br>
             <input type="text" id="fname" placeholder="שם" name="fname"><br>
-            
+
             <label for="lname">משפחה</label><br>
             <input type="text" id="lname" placeholder="משפחה" name="lname"><br>
-            <input type="submit" value="שלח">
+
+            <label for="ename">מייל</label><br>
+            <input type="email" id="ename" placeholder="מייל" name="ename"><br>
+            <input onclick="savename3()" type="submit" value="שלח">
 
         </form>
     </div>
 </body>
+
 </html>
