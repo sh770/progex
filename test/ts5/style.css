@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+    background-color: black;
+}
+
+h1 {
+    font: size 50px;
+    ;
+    background-color: khaki;
+    font-family: 'Noto Rashi Hebrew', serif;
+    border: 9px solid red;
+    border-radius: 50px;
+}
+
+h1:hover {
+    background-color: darkorange;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 55px;
+}
+
+h1:active {
+    background-color:rgb(233, 164, 26);
+    border: 20px rgb(76, 226, 43);
+    border-radius: 100px red;
+}
+
+p {
+    font-family: 'Secular One', sans-serif;
+    color: cyan;
+
+}
+
+div {
+    margin: auto;
+    padding: auto;
+    width: 300px;
+    height: 100px;
+}
