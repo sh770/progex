@@ -10,16 +10,26 @@
 </head>
 
 <body>
+    <h1 id="demo">שינוי</h1>
+    <button onclick="Display_fn()">הצג</button>
+
     <script>
 
         console.log(localStorage.getItem("fname"));
         console.log(localStorage.getItem("lname"));
         console.log(localStorage.getItem("ename"));
+        console.log(a);
 
         // console.log(localStorage.getItem("fname").value);
         // console.log(localStorage.getItem("lname").value);
         // console.log(localStorage.getItem("ename").value);
     </script>
 </body>
-
+<script> 
+    function Display_fn() {
+        localStorage.getItem("fname").value;
+      var a = document.getElementById("fname").value;
+      document.getElementById("demo").innerHTML = a;
+    }
+    </script>
 </html>

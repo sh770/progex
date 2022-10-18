@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <script>               
+               
+        function userName(){                         
+            localStorage.setItem("firstname", document.getElementById("fname").value)   
+            localStorage.setItem("lastname", document.getElementById("lname").value)  
+            localStorage.setItem("myemail", document.getElementById("email").value)  
+         }                 
+    </script>
+</head>
+
+<body>
+    <div>
+        <form action="" target="_blank" method="GET"> 
+          <label for="fname">Firs Name:</label><br>
+          <input type="text" value="" name="fname" id="fname" placeholder="Enter your First Fame"><br>
+          <label for="fname">last Name:</label><br>
+          <input type="text" value="" name="lname" id="lname" placeholder="Enter your Last Name"><br>
+          <label for="fname">Emale:</label><br>
+          <input type="email" value="" name="email" id="email" placeholder="Enter your Email"><br>
+          <input type="submit" value="Submit" onclick="userName()">         
+        </form>         
+    </div>        
+</body>
+
+</html>

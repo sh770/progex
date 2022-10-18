@@ -7,6 +7,8 @@ body {
 }
 
 div {
-    padding: top 20px;
-    margin: auto;
+    padding: top 10px;
+    margin: 50px;
+    border: 5px solid red;
+    border-radius: 50px;
 }

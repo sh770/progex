@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="style2.css">
+    </head>
+
+<body>
+<h2> הדפס טקסט</h2>
+<input type="text" id="mtxt" value="" placeholder="הכנס טקסט">
+<br>
+<!-- <p>Press button to display the text value.</p> -->
+<button onclick="Display_fn()">הצג</button>
+<h1 id="demo">שינוי</h1>
+</body>
+
+<script> 
+function Display_fn() {
+  var a = document.getElementById("mtxt").value;
+  document.getElementById("demo").innerHTML = a;
+}
+</script>
+</html>
