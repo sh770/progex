@@ -1,0 +1,10 @@
+/* .nav-item > a {
+    color: white;
+} */
+.nav-link{
+    color: white;
+}
+
+body{
+    direction: rtl;
+}

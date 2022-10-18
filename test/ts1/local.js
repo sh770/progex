@@ -37,7 +37,7 @@ function clir(){
     save_btn2.addEventListener("click", function(){
     //    let input_val = ""; 
     //    input_val = document.getElementById("input_val").value;
-       input_val = "document.getElementById('input_val').value = ''"
+       myc();
        localStorage.clear();
        checkLocal();
     
@@ -48,3 +48,7 @@ function clir(){
 //     scalculator = document.getElementById("calculator_value").value;
 //     calculator_value.value = '0';
 //     }
+
+function myc(){
+    "document.getElementById('id_input').value = ''"
+}
