@@ -35,9 +35,16 @@ function clir(){
     let save_btn2 = document.querySelector("#save_btn2");
     
     save_btn2.addEventListener("click", function(){
-       let input_val = ""; 
+    //    let input_val = ""; 
+    //    input_val = document.getElementById("input_val").value;
+       input_val = "document.getElementById('input_val').value = ''"
        localStorage.clear();
        checkLocal();
     
 })
 }
+
+// function clearall(){
+//     scalculator = document.getElementById("calculator_value").value;
+//     calculator_value.value = '0';
+//     }
