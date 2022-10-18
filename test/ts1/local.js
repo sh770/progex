@@ -44,10 +44,7 @@ function clir(){
 })
 }
 
-// function clearall(){
-//     scalculator = document.getElementById("calculator_value").value;
-//     calculator_value.value = '0';
-//     }
+
 
 function myc(){
     "document.getElementById('id_input').value = ''"
