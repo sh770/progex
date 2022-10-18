@@ -3,12 +3,20 @@ body {
     text-align: center;
     background-color: black;
     color:aliceblue;
-    font-size:30px;
+    /* font-size:30px; */
 }
 
 div {
-    padding: top 10px;
-    margin: 30px;
+    width: 150px;
+    padding: top 20px;
+    margin: auto;
     border: 5px solid red;
     border-radius: 50px;
+    display:noflex;
+    justify-content: center;
+}
+
+strong{
+    font-family: sans-serif;
+    font-size: 20px;
 }
