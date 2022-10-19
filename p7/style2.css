@@ -1,38 +1,60 @@
 body {
     direction: rtl;
-    text-align: center;
-    background-color: black;
-    color: aliceblue;
+    /* text-align: center; */
+    /* background-color: black; */
+    /* color: aliceblue; */
 }
 
-.nav-link{
-    color: white;
-}
 
-#r1{}
+/* .r1:hover{
+    background-color: rgb(30, 0, 255);
+} */
 
-.r2:hover{
+/* .r2:hover{
     animation-name: r2;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-}
+    background-color: red;
+} */
 
-#r3{}
+/* .r3{
+    background-color: red; 
+} */
 
-#r55 {
+.Block1 {
     width: 100px;
     height: 100px;
     background-color: red;
     margin: auto;
     padding: auto ;
-    
-    
+        
   }
   
-  @keyframes r2 {
+  @keyframes r23 {
     0%   {background-color:red; }
     25%  {background-color:yellow; }
     50%  {background-color:blue; }
     75%  {background-color:green; }
     100% {background-color:red; }
+  }
+
+  .hide {
+    display: none;
+  }
+    
+  .r2 {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    padding: auto;
+    
+  }
+ 
+
+  .r2:hover + .hide {
+    display: block;
+    background-color: red;
+    width: 100px;
+    height: 100px;
   }
