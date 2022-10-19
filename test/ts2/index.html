@@ -1,78 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-        text-align: center;
+        body {
+            text-align: center;
         }
-        #a0001{
-        display: table-row;
-        justify-content: center;
-        /* display: grid; */
+
+        #myDIV {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: center; */
+
         }
 
         .hide1 {
-          display: none;
+            display: none;
         }
 
         .hide2 {
-          display: none;
+            display: none;
         }
 
         .hide3 {
-          display: none;
+            display: none;
         }
-            
 
-        .myDIV1:hover + .hide1 {
+
+        .myDIV1:hover+.hide1 {
             display: block;
             background-color: red;
             width: 100px;
             height: 100px;
             margin: auto;
             padding: auto;
-            
+
         }
 
-        .myDIV2:hover + .hide2 {
+        .myDIV2:hover+.hide2 {
             display: block;
             background-color: rgb(255, 0, 238);
             width: 100px;
             height: 100px;
             margin: auto;
             padding: auto;
-            
+
         }
 
-        .myDIV3:hover + .hide3 {
+        .myDIV3:hover+.hide3 {
             display: block;
             background-color: rgb(0, 255, 51);
             width: 100px;
             height: 100px;
             margin: auto;
             padding: auto;
-            
-        }
 
-      
-        </style>
-        </head>
-        <body>
-        
-        <h2>Display an Element on Hover</h2>
-        <div id="a0001">
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Display an Element on Hover</h2>
+    <div id="myDIV">
         <div class="myDIV1">Hover over me.<br><br><br><br><br><br></div>
         <div class="hide1"></div>
         <div class="myDIV2">Hover over me.<br><br><br><br><br><br></div>
         <div class="hide2"></div>
         <div class="myDIV3">Hover over me.<br><br><br><br><br><br></div>
         <div class="hide3"></div>
-        </div>
-        
-        </body>
+    </div>
+
+</body>
 
 </html>
