@@ -1,16 +1,34 @@
 .block1 {
     background-color: blue;
     animation: upside 2s infinite;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    padding: auto;
+    border: 5px solid red ;
+    border-radius: 20px;
 }
 
 .block2 {
     background-color: red;
     animation: color5 3s infinite;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    padding: auto;
+    border: 5px solid red ;
+    border-radius: 20px;
 }
 
 .block3 {
     background-color: yellow;
     animation: rotate 1.5s linear infinite;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    padding: auto;
+    border: 5px solid red ;
+    border-radius: 20px;
 }
 
 .block0{
