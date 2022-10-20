@@ -1,3 +1,8 @@
+body{
+    direction: rtl;
+    background-color: black;
+}
+
 .block1 {
     background-color: blue;
     animation: upside 2s infinite;
