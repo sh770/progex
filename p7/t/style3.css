@@ -1,0 +1,57 @@
+.r1:hover {
+    background-color: blue;
+    animation: upside 2s infinite;
+}
+
+.r2:hover {
+    background-color: red;
+    animation: color5 3s infinite;
+}
+
+.r3:hover {
+    background-color: yellow;
+    animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+@keyframes color5 {
+    0% {
+        background-color : aqua;
+    }
+
+    25% {
+        background-color: blue;
+    }
+
+    50% {
+        background-color: blueviolet;
+    }
+
+    75% {
+        background-color: chartreuse;
+    }
+
+    100% {
+        background-color: coral;
+    }
+}
+
+@keyframes upside {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        transform: rotateX(360deg);
+    }
+}
