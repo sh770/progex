@@ -32,8 +32,11 @@
 }
 
 .block0{
-    display:none;
-}
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    padding: auto;
+    }
 
 @keyframes rotate {
     0% {
