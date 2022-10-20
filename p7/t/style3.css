@@ -1,16 +1,20 @@
-.r1:hover {
+.block1 {
     background-color: blue;
     animation: upside 2s infinite;
 }
 
-.r2:hover {
+.block2 {
     background-color: red;
     animation: color5 3s infinite;
 }
 
-.r3:hover {
+.block3 {
     background-color: yellow;
     animation: rotate 1.5s linear infinite;
+}
+
+.block0{
+    display:none;
 }
 
 @keyframes rotate {
