@@ -28,3 +28,12 @@ let wwr = zz ==zz;
 console.log(wwr);
 
 
+let nontt = "avy " , age = 25 , hit = 60;
+//let ggg = "FollName ",+ "nontt ,+ age, + hit;
+
+console.log(nontt , age,  hit);
+
+let resolt = "name: "+ nontt + "age:- " + age +' '+ "hit:- " + hit;
+let resoltt = "name:" + nontt + " age "+  age  + " hit " +  hit;
+console.log(resolt);
+console.log(resoltt);
