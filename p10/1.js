@@ -31,3 +31,14 @@ function myfun4() {
  
  myfun4();
  
+ function myfun5(x,y) {
+    return (x+y);
+ }
+
+ function myfun6() {
+    let num1 = prompt("first number")
+    let num2 = prompt("second number")
+    alert(myfun5(Number(num1),Number(num2)))
+ }
+
+ myfun6()
