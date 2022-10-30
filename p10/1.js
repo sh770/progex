@@ -17,7 +17,7 @@ function myfun3() {
    alert(`${a}\n${b}\n${c}\n${d}\n${e}`);
 }
 
-myfun3();
+//myfun3();
 
 function myfun4() {
     let fName = prompt("enter data first Name");
@@ -29,7 +29,7 @@ function myfun4() {
     \nYou Are: ${age} years old`);
  }
  
- myfun4();
+ //myfun4();
  
  function myfun5(x,y) {
     return (x+y);
@@ -41,4 +41,4 @@ function myfun4() {
     alert(myfun5(Number(num1),Number(num2)))
  }
 
- myfun6()
+ //myfun6()
