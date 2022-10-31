@@ -1,0 +1,48 @@
+.container{
+    max-width: 900px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+nav{
+    min-height: 40px;
+    background: black;
+    color: white;
+}
+nav .nav_inside a{
+    color: white;
+    text-decoration: none;
+    padding: 0 12px;
+}
+
+header{
+    min-height: 200px;
+    background: skyblue;
+    color: blue;
+}
+
+main{
+    min-height: 300px;
+    background: black;
+    color: white;
+}
+
+main .row .box_top{
+    border: 2px solid white;
+    min-height: 200px;
+    }
+
+    main .row .box_boton{
+        border: 2px solid gold;
+        min-height: 100px;
+        }
+
+footer{
+    min-height: 40px;
+    background: gray;
+    color: white;
+}
