@@ -1,7 +1,12 @@
 .container{
     max-width: 900px;
+    
 }
-
+.budy{
+    direction: rtl;
+    
+    
+}
 .center{
     display: flex;
     justify-content: center;
@@ -20,7 +25,7 @@ nav .nav_inside a{
 }
 
 header{
-    min-height: 200px;
+    min-height: 150px;
     background: skyblue;
     color: blue;
 }
@@ -33,16 +38,18 @@ main{
 
 main .row .box_top{
     border: 2px solid white;
-    min-height: 200px;
+    min-height: 250px;
     }
 
     main .row .box_boton{
         border: 2px solid gold;
-        min-height: 100px;
+        min-height: 250px;
         }
 
 footer{
-    min-height: 40px;
+    min-height: 50px;
     background: gray;
     color: white;
+    bottom: 0;
+    position: absolute;
 }
