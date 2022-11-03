@@ -37,3 +37,5 @@ function myfun() {
     console.log(xx);
 }
 myfun(x);
+
+// 7 //
