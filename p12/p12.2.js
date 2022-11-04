@@ -13,3 +13,15 @@ myfx(x,y);
 for (let i = 0 ; i < 10 ; i++){
     console.log(" i = " + i);
 }
+
+// demo
+
+// let random = "littledobermanunderatree";
+// console.log(random)
+// console.log(random.length)
+// for (let i = 0; i < random.length; i++) { 
+//     // by using the property "length" it return the 
+//     //string in a number which makes the loop to seperate each letter the loop will 
+//     //end when it will reach to the end of the string which is "E".
+//   console.log(random[i]);
+// }
