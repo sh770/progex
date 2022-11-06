@@ -18,4 +18,4 @@ for(let i=1 ; i<numSatr ; i++){
     console.log("  ".repeat(numSatr - i)  + strUp + strDn );
  }
 }
-printStar(11);
+printStar(10);
