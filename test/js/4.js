@@ -33,4 +33,4 @@ function printStar(numSatr) {
       console.log("   ".repeat(numSatr - i) + strUp + strDn);
    }
 }
-printStar(5);
+printStar(31);

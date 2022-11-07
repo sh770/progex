@@ -1,0 +1,30 @@
+body{
+    direction: rtl;
+    background-color: black;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    border-radius: 50px;
+    border: solid red 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+
+    
+}
+.div:hover{
+    background-color: aqua;
+    
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding:auto;
+    margin: auto;
+    margin-top: 150px;
+}

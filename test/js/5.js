@@ -13,4 +13,4 @@ function fibonachi(num){
   }
   return fibo;
  }  
- console.log(fibonachi(20)); 
+ console.log(fibonachi(8)); 
