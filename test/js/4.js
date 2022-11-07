@@ -19,14 +19,18 @@ function printStar(numSatr) {
          // strUp אז המשתנה 
          // 
          if (j - 1) {
+            // toString הופך מספר למחרוזת
             strUp = strUp + j.toString().padStart(2, "0") + " ";
+            // padStart מוסיף תוים מהמקום השני לפי המספר במקום הראשון 
             strDn = (j - 1).toString().padStart(2, "0") + " " + strDn;
+            // 
          }
          else {
             strUp = j.toString().padStart(2, "0") + " " + strUp;
+            // 
          }
       }
       console.log("   ".repeat(numSatr - i) + strUp + strDn);
    }
 }
-printStar(31);
+printStar(5);
