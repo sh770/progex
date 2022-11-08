@@ -1,3 +1,5 @@
+// תרגיל 24 ב
+
 let i ;
 let a = 100;
 console.log("All even numbers from 1 to 100")
