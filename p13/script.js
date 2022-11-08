@@ -1,3 +1,6 @@
+let d = new Date();
+document.getElementById("demo").innerHTML = "היום בחודש הוא " + d.getDate();
+
 function name() {
 let date = new Date;
 let answer = date.getDate();

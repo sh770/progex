@@ -11,7 +11,7 @@ div{
     border: solid red 5px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
-
+    
     
 }
 .div:hover{
@@ -27,4 +27,11 @@ div{
     padding:auto;
     margin: auto;
     margin-top: 150px;
+}
+
+#demo{
+    color: red;
+    
+    width: 150px;
+    height: 150px;
 }
