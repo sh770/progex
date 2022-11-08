@@ -1,7 +1,3 @@
-// do {
-    
-// } while (condition);
-
 let i ;
 let a = 100;
 console.log("All even numbers from 1 to 100")
