@@ -1,0 +1,17 @@
+body{
+    direction: rtl;
+    background-color: black;
+    color: antiquewhite;
+    /* display: flex; */
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding:auto;
+    margin: auto;
+}
+
+.calculator_value{
+    background-color: aqua;
+    color: chocolate;
+}
