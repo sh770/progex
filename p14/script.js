@@ -59,7 +59,8 @@ function numpressd(){
     }
 
     function reset(){
-        // calculator = '';
         document.getElementById("calculator").innerHTML = "";
-        calculator_value.value = '';
+        calculator_value.value = "";
+        document.getElementById("h1").innerHTML = "";
+
     }
