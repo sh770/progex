@@ -23,3 +23,7 @@ function bigHeights(heights, start, end) {
     }
     return count;
 }
+
+console.log(bigHeights([9, 4, 0, 8, 2], 2, 4))
+console.log(bigHeights([5, 3, 6, 7, 2], 0, 1))
+console.log(bigHeights([5, 3, 6, 7, 2], 0, 4))

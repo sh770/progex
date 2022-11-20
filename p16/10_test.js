@@ -20,5 +20,7 @@ function wordsWithout(words, target) {
     }
     return arr;
 }
-
+let words = ["a", "b", "c", "a"];
+let target = "a";
+console.log(wordsWithout(words,"a"))
 
