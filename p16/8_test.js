@@ -8,11 +8,25 @@
  * has_one(220) → False
  * */
 
- function has_one(n) {
-    if(n  = 1){
-    return true
-    }else{ 
-        return false
+//  function has_one(n) {
+//     if(n === 1){
+//     return true
+//     }else{ 
+//         return false
+//     }
+//     }
+// console.log(has_one(5));
+// ---------------------------
+function has_one(n) {
+    while(n > 0){
+        if(n % 10 === 1){
+            return true;
+        }
+        console.log(n);
+        n = Math.floor(n / 10);
+        console.log(n);
+
     }
-    }
-console.log(has_one(1));
+    return false;
+}
+console.log(has_one(100))

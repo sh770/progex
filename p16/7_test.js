@@ -23,4 +23,5 @@ function wordsCount(words, len) {
 console.log(wordsCount(["a", "bb", "b", "ccc"], 3)) //→ 1
 console.log(wordsCount(["a", "bb", "b", "ccc"], 1)) //→ 2
 console.log(wordsCount(["a", "bb", "b", "ccc"], 4)) //→ 0
-console.log(wordsCount(["a", "8", "bat", "cbcc"], 1));
+console.log(wordsCount(["a", "8", "bat5", "cbcc"], 4));
+console.log(wordsCount(["a", "8", "bat5", "cb"], 4));
