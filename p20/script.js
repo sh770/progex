@@ -7,3 +7,12 @@ let json = fetch("employees.json")
 
 console.log(json);
 }
+
+
+function print2(){
+fetch("users.json")
+  .then(response => response.json())
+  .then(json => console.log(json))
+
+  console.log(json);
+}
