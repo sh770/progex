@@ -1,5 +1,15 @@
-let counterx;
-let countero;
+/**
+ * I made a mistake in the last lesson and I'm fixing it here.
+ * 
+ * 
+ * Pass By Value -> Primitive Types (Number, String, Boolean)
+ *      - When you pass a primitive type to a function, you are passing a copy of the value      
+ *
+ * Pass By Reference -> Objects (Array, Object, Function)
+ *      - When you pass an object to a function, you are passing a reference to the object
+ * 
+ * 
+ */
 
 // this will be the functions we use to build the game
 function reset() {
@@ -26,7 +36,6 @@ function ArrayToMatrix(arr, num) {
     return matrix;
 }
 
- 
 function checkForWin(matrix, symbol) {
     // this function check for all possible wining 
     let rows_c, col_c, diagonal_c, diagonalT_c; // counters 
@@ -65,10 +74,6 @@ function checkForWin(matrix, symbol) {
 }
 
 
-
-
-
-
 function checkforTie(array) {
     for(let i = 0; i < array.length; i++){
         if(array[i].textContent == ''){
@@ -79,9 +84,47 @@ function checkforTie(array) {
 }
 
 
+function register(){
+    let player_one = prompt("שחקן ראשון : הכנס שם");
+    let player_two = prompt("שחקן שני : הכנס שם");
+    document.getElementById("playerOne").textContent = player_one;
+    document.getElementById("playerTwo").textContent = player_two;
+    p1['name'] = player_one;
+    p2['name'] = player_two;
+}
+
+function incrementScore(symbol){
+    if(symbol == 'X'){
+        p1['points']++;
+        document.getElementById("player1Score").textContent = p1['points'];
+    }else{
+        p2['points']++;
+        document.getElementById("player2Score").textContent = p2['points'];
+    }
+}
+
+function resetAll(){
+    reset();
+    document.getElementById("playerOne").textContent = "Player 1";
+    document.getElementById("playerTwo").textContent = "Player 2";
+    document.getElementById("player1Score").textContent = 0;
+    document.getElementById("player2Score").textContent = 0;
+}
+
+
 
 // Game Logic
 let counter = 0; // Keep track of the number of turns
+
+let p1= {
+    name: "Player 1",
+    points: 0
+};
+
+let p2 = {
+    name: "Player 2",
+    points: 0
+};
 
 let buttonArray = document.querySelectorAll(".btn"); // Get all the buttons
 
@@ -104,24 +147,23 @@ for (let i = 0; i < buttonArray.length; i++) { // Loop through the buttons and a
             buttonArray[i].textContent = "X";
             counter++;     
             symbol = 'X';
-            counterx++;
         }else if(counter % 2 != 0 && buttonArray[i].textContent == "") {
             buttonArray[i].textContent = "O";
             counter++;
             symbol = 'O';
-            countero++;
         }else{
-            alert("This button is already clicked!");
+            alert("לא ניתן להקליק על כפתור פעמיים");
         }
 
         if(checkForWin(matrix, symbol)){
-            alert(`${symbol} המנצח`)
-            reset()
+            alert(`${symbol} המנצח הוא`)
+            incrementScore(symbol);
+            reset();
         }
 
         if(checkforTie(coArray)){
-            alert("תיקו אין מנצח במשחק")
-            reset()
+            alert("תיקו")
+            reset();
         }
         
     }

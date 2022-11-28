@@ -8,11 +8,14 @@
     <script src="script.js" defer></script>
     <title>Document</title>
 </head>
-<body><h1>משחק איקס עיגול</h1>
+<body><h1 style="text-align:center;color: bisque;">משחק איקס עיגול</h1>
     <!-- create a 3 X 3 table with botton in every box -->
+
     <div class="container">
-        <div class="">1</div>
-        <div class="div">2</div>
+        <div class="player1">
+            <h1 id="playerOne">Player 1</h1>
+            <h2 id="player1Score">0</h2>
+        </div>
             <div class="table_div">
                 <table>
                     <tr>
@@ -32,14 +35,16 @@
                     </tr>
                 </table>
             </div>
-        <div class="side_manu">
-            <button id="reset_btn" onclick="reset()">נקה לוח</button>
+        <div class="player2">
+            <h1 id="playerTwo">Player 2</h1>
+            <h2 id="player2Score">0</h2>
         </div>
     </div>
  
-
-
-   
-    
+    <div class="side_manu container">
+        <button id="reset_btn" onclick="reset()">נקה</button>
+        <button id="register" onclick="register()">רשום שחקנים</button>
+        <button id="reset_btn" onclick="resetAll()">נקה הכל</button>
+    </div>
 </body>
 </html>
