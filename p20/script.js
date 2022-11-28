@@ -10,7 +10,7 @@ console.log(json);
 
 
 function print2(){
-fetch("users.json")
+    let json = fetch("users.json")
   .then(response => response.json())
   .then(json => console.log(json))
 
