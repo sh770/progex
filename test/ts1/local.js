@@ -28,6 +28,7 @@ window.onload = function(){
     // alert(input_val)
     localStorage.setItem("user", input_val);
     checkLocal();
+    document.getElementById('id_input').value = ''
     })
 }
 
@@ -37,7 +38,7 @@ function clir(){
     save_btn2.addEventListener("click", function(){
     //    let input_val = ""; 
     //    input_val = document.getElementById("input_val").value;
-       myc();
+    //    myc();
        localStorage.clear();
        checkLocal();
     
@@ -46,7 +47,7 @@ function clir(){
 
 
 
-function myc(){
-    "document.getElementById('id_input').value = ''"
-}
+// function myc(){
+//     document.getElementById('id_input').value = ''
+// }
 
