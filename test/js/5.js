@@ -13,4 +13,7 @@ function fibonachi(num){
   }
   return fibo;
  }  
- console.log(fibonachi(8)); 
+ console.log(fibonachi(90)); 
+ console.log(...fibo); 
+
+
