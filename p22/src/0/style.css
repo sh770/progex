@@ -1,0 +1,34 @@
+/* center the login form in the middle of the screen */
+#login{
+    text-align: center;
+    justify-items: center;
+}
+
+a:link, a:visited {
+    text-align: center;
+    justify-items: center;
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }
+
+  #nanuser{
+    display: none;
+    display: flexbox;
+    justify-items: center;
+    text-align: center;
+  }
+
+  #trueuser{
+    /* display: none; */
+    display: flexbox;
+    justify-items: center;
+    text-align: center;
+  }
