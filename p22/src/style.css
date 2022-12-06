@@ -18,3 +18,17 @@ a:link, a:visited {
   a:hover, a:active {
     background-color: red;
   }
+
+  #nanuser{
+    display: none;
+    display: flexbox;
+    justify-items: center;
+    text-align: center;
+  }
+
+  #trueuser{
+    /* display: none; */
+    display: flexbox;
+    justify-items: center;
+    text-align: center;
+  }

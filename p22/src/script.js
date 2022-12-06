@@ -1,106 +1,25 @@
+let json = fetch("../data_base.json")
+.then(response => response.json())
+.then(data => console.log(data));
 
+// console.log(json)
+// const txt = data
+// const obj = JSON.parse(json)
+// document.getElementById("demo").innerHTML = obj.test_user[username[1]];
 
+// document.getElementById("demo").innerHTML = 55;
+// Object Object.username[1] + ", " + Object.password[1]
 
-const ul = document.getElementById('authors');
-const list = document.createDocumentFragment();
-const url = 'https://jsonplaceholder.typicode.com/users';
+// const myObj = {name:"John", age:30, city:"New York"};
+// const myObj1 = data;
+// document.getElementById("demo").innerHTML = myObj.name;
+// document.getElementById("demo").innerHTML = myObj1.test_user;
+// const text = '[ "Ford", "BMW", "Audi", "Fiat" ]';
+// const myArr = JSON.parse(text);
+// document.getElementById("demo").innerHTML = myArr[0];
 
-fetch(url)
-    .then((response) => {
-        return response.json();
-    })
-    .then((data) => {
-        let authors = data;
+// const json = '{"result":true, "count":42}';
+// const obj = JSON.parse(json);
+// document.getElementById("demo").innerHTML = Object.testuser[0];
 
-        authors.map(function (author) {
-            let li = document.createElement('li');
-            let name = document.createElement('h2');
-            let email = document.createElement('span');
-
-            name.innerHTML = `${author.name}`;
-            email.innerHTML = `${author.email}`;
-
-            li.appendChild(name);
-            li.appendChild(email);
-            list.appendChild(li);
-        });
-    }).
-    .catch(function (error) {
-        console.log(error);
-    });
-
-ul.appendChild(list);
-
-const url1 = 'https://jsonplaceholder.typicode.com/users';
-
-let data = {
-    name: 'Sammy'
-}
-
-let request = new Request(url1, {
-    method: 'POST',
-    body: JSON.stringify(data),
-    headers: new Headers({
-        'Content-Type': 'application/json; charset=UTF-8'
-    })
-});
-
-fetch(request)
-    .then(function () {
-        // Handle response you get from the API
-    });
-
-
-// function print2(){
-//     let json = fetch("../data_base.json")
-//   .then(response => response.json())
-//   .then(json => console.log(json))
-
-//   console.log(json);
-// }
-// let json1 = fetch("../data_base.json")
-//     .then(response => response.json())
-//     .then(json => {
-//         console.log(json)
-//     })
-
-// let json = fetch("../data_base.json")
-//     .then(response => response.json())
-//     .then(data => {
-//         let userData = data;
-//         for (let i in userData) {
-//             for (let j in userData[i]) {
-//                 console.log(j);
-//             }
-
-//         }
-//     });
-
-// console.log(json);
-
-//=====================
-// function login() {
-
-//     let json = fetch("../data_base.json")
-//         .then(response => response.json())
-//         .then(data => {
-//             let userData = data;
-//             for (let i in userData) {
-//                 for (let j in userData[i]) {
-//                     console.log(j);
-//                 }
-
-//             }
-//         });
-//         json = u
-//     let usermane = document.getElementById("name").value;
-//     let password = document.getElementById("password").value;
-
-
-//     if (i == "username" && j == "password") {
-//         alert(usermane + " - " + password);
-//     }
-//     else {
-//         alert('you not me');
-//     }
-// }
+console.log(json)

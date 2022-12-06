@@ -3,4 +3,8 @@
         "username": "username",
         "password": "password"
     }
+    ,"user":{
+        "username": "1",
+        "password": "2"
+    }
 }
