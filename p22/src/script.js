@@ -17,7 +17,7 @@ function redirect(link) {
 }
 
 function morph() {
-    if(location.pathname == "/p22/src/index.html"){
+    if(location.pathname == "/progex/p22/src/index.html"){
         if(sessionStorage.getItem("isLogin") == "true"){
             document.getElementById("user-name-h").textContent = `ברוך הבא ${sessionStorage.getItem("username")}`;
             document.getElementById("img-div").style.backgroundImage = "url('../static/prty.png')";
