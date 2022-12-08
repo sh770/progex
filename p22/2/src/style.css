@@ -1,0 +1,19 @@
+/* center the login form in the middle of the screen */
+/* button{
+    width: 50px;
+    height: 50px;
+} */
+body{
+direction: rtl;
+background-color: black;
+}
+
+.center{
+    /* display: flex; */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding:auto;
+    margin: auto;
+    margin-top: 150px;
+}

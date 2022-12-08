@@ -9,17 +9,17 @@
     <title>Log In</title>
 </head>
 <body>
-    <a href="index.html">Home</a>
-    <button onclick="redirect('index.html')">index</button>
-    <button onclick="showUser()">Show User Info</button>
-
-    <form id="login-form">
-        <label for="name">name</label><br>
-        <input type="text" id="name" placeholder="enter username"><br>
-        <label for="password">password</label><br>
-        <input type="password" id="password" placeholder="enter password"><br>
-        <input type="submit" onclick="login()" value="button">
-
-    </form>
+    <div class="container">
+        <div class="login-form">
+            <h1>כניסה</h1>
+            <div id="login">
+                <form>
+                    <input type="text" id="username" name="username" placeholder="שם">
+                    <input type="password" id="password" name="password" placeholder="סיסמה">
+                </form>
+                    <button onclick="login()">כניסה</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

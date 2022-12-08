@@ -6,11 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <title>home</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>hello</h1>
-    <button onclick="redirect('login.html')">login</button>
-    <button onclick="showUser()">Show User Info</button>
+    <div id="img-div" class="container bg-img">
+        <div class="card">
+            
+            <div class="card-content">
+                <h1 id="user-name-h">שלום אורח</h1>  
+            </div>
+            <div class="card-content">
+                <button id="log" onclick="redirect('login.html')">כניסה</button>   
+                <button id="login1" onclick="del()">יציאה</button>   
+            </div>
+            
+        </div>
+    </div>
+
+
 </body>
 </html>

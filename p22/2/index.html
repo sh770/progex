@@ -1,0 +1,127 @@
+<html>
+<head>
+  <title>Login Page</title>
+  <!-- <style>
+    body {
+      background-color: #efefef;
+      font-family: sans-serif;
+    }
+    .login-container {
+      width: 400px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 5px;
+    }
+    button:hover {
+      opacity: 0.8;
+    }
+  </style> -->
+</head>
+<body>
+  <!-- <div class="login-container">
+    <h2>Login</h2>
+    <form action="src/index.html" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div> -->
+  <form id="login-form">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <button type="submit" onclick="login()">Login</button>
+  </form>
+  
+  <script>
+    function login() {
+      // Get user input from form
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+  
+      // Read JSON file
+      var reader = new FileReader();
+      reader.onload = function() {
+        // Parse JSON data
+        var data = JSON.parse(reader.result);
+  
+        // Check if user input matches JSON data
+        if (username === data.username && password === data.password) {
+          // Redirect to desired page
+          window.location.href = "https://www.example.com";
+        } else {
+          // Display error message
+          alert("Invalid username or password");
+        }
+      }
+      reader.readAsText('credentials.json');
+    }
+  </script>
+  
+  <!-- <form id="loginForm">
+    <label>Username:</label>
+    <input type="text" id="username">
+    <label>Password:</label>
+    <input type="password" id="password">
+    <button type="button" onclick="login()">Login</button>
+  </form>
+  
+  <script>
+    function login() {
+      // Read the JSON file
+alert(5)
+    //   let jsonData = readJSON('login.json');
+      
+  
+      // Get the entered login information
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+  
+      // Check if the login information matches the JSON data
+      if (jsonData[username] === password) {
+        alert("// Login successful)")
+        // Grant access to the page
+      } else {
+        alert("// Login failed")
+        // Display an error message
+      }
+    }
+  </script> -->
+  
+</body>
+<!-- <script>
+    const fs = require('fs');
+
+const loginData = JSON.parse(fs.readFileSync('login.json', 'utf8'));
+const username = loginData.username;
+const password = loginData.password;
+
+// Use the username and password to log in
+
+</script> -->
+</html>
