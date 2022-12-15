@@ -27,6 +27,8 @@ function login() {
         buildTable();
 
     } else {
+        document.getElementById("username").value = "";
+        document.getElementById("password").value = "";
         alert("שם או סיסמה שגויים");
     }
 
