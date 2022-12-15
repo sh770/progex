@@ -89,24 +89,6 @@ console.log(instanceOf(5, {a: 5, b: 5})) // 2
     // 2. assume that the user is logged in if the user name is "admin" and the password is "1234"
     // 3. if the user is logged in, show a welcome message and table of all users in "data_base_l3.json" and their emails
     
-// function admin
-//     for()
-//     document.getElementById("table").write("<tr>")
-//     document.write("<td>" + user + "<td>");
-//     document.write("<td>" + last_name + "<td>");
-//     document.write("<td>" + mail + "<td>");
-//     document.write("<tr>")
-
-document.write("<table border='1'>");
-   document.write("<tr>");
-      document.write("<td>1</td>");
-      document.write("<td>2</td>");
-   document.write("</tr>");
-   document.write("<tr>");
-      document.write("<td>1</td>");
-      document.write("<td>2</td>");
-   document.write("</tr>");
-document.write("</table>");
 
 
  

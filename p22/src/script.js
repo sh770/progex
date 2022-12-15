@@ -21,9 +21,9 @@ function morph() {
         if (sessionStorage.getItem("isLogin") == "true") {
             document.getElementById("user-name-h").textContent = `ברוך הבא ${sessionStorage.getItem("username")}`;
             document.getElementById("img-div").style.backgroundImage = "url('../static/prty.png')";
-            // document.getElementById("log").style.display = "none";
+            document.getElementById("log").style.display = "none";
         } else {
-            // document.getElementById("logout").style.display = "none";
+            document.getElementById("logout").style.display = "none";
         }
     } else {
         console.log(localStorage.getItem("isLogin"));
@@ -57,17 +57,17 @@ function del() {
     redirect('index.html')
 }
 
-function btb1() {
-    if (sessionStorage.getItem("isLogin") == "false") {
-        document.getElementById("logout").style.display = "none";
-    }
-    }
+// function btb1() {
+//     if (sessionStorage.getItem("isLogin") == "false") {
+//         document.getElementById("logout").style.display = "none";
+//     }
+//     }
 
-function btb2() {
-    if (sessionStorage.getItem("isLogin") == "true") {
-        document.getElementById("log").style.display = "none";
-    }
-    }
+// function btb2() {
+//     if (sessionStorage.getItem("isLogin") == "true") {
+//         document.getElementById("log").style.display = "none";
+//     }
+//     }
 
-    btb1();
-    btb2();
+//     btb1();
+//     btb2();
