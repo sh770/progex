@@ -24,6 +24,7 @@ function login() {
     if (username == Data_Base.user.username && password == Data_Base.user.password) {
         document.getElementById("form").style.display = "none";
         document.getElementById("admin").style.display = "block";
+        buildTable();
 
     } else {
         alert("שם או סיסמה שגויים");

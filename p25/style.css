@@ -13,7 +13,6 @@ body{
     position: relative;
     top: auto;
     left: auto;
-    /* background-color: rgba(255, 255, 255, 0.653); */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
