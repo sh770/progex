@@ -1,0 +1,23 @@
+{
+  "name": "progex",
+  "version": "1.0.0",
+  "description": "קורס פיתוח",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sh770/progex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sh770/progex/issues"
+  },
+  "homepage": "https://github.com/sh770/progex#readme"
+}
