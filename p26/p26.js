@@ -1,81 +1,59 @@
-// Read And Write Files With Node.js
 
-// fs module is a core module, so we don't need to install it
-// import { readFile, writeFile, appendFile } from 'fs';
 
 const fs = require('fs');
-
-// readFile is an asynchronous function
-// readFile takes 3 arguments: file name, encoding, callback function
-// callback function takes 2 arguments: error, data
-// let Data_base;
-//  async function f(){
-//     await new Promise((resolve ,reject) => {
-//         fs.readFile('readme.txt', 'utf8', (error, data) => {
-//     if (error){
-//         console.log("cannot find file");
-//     } 
-//     resolve(data)
-//     })
-//     }).then(data => {Data_base = data.split(" ")})
-// }
-// await f();
-// console.log(Data_base);
+// console.log("==========")
 
 console.log(fs.readFileSync("readme.txt", "utf8").split(" "));
 
-console.log("==========")
-console.log(fs.readFileSync("ex1.txt", "utf8").split(" "));
+console.log("=========2=")
+// console.log(fs.readFileSync("ex1.txt", "utf8").split(" "));
 
+// console.log("==========")
 
- /*
-===============
-let Data_base
-async function f(){
-  await new Promise((resolve, reject) => {
-    readFile("ex1.txt", "utf8", (error, data) => {
-      if(error){
-        console.log("cannot find file");
+// const fs = require("fs");
+
+// Read the contents of the text file
+fs.readFile("ex1.txt", "utf8", (error, text) => {
+  if (error) {
+    console.error(error);
+  } else {
+    // Split the text into an array of words
+    // const words = text.split(" ");
+    // const words = text.split(/[\s\n]+/);
+    const words = text.match(/\b[a-zA-Z]+\b/g);
+    // Create an empty object to store the frequency of each word
+    const wordCounts = {};
+
+    // Iterate through the array of words and update the frequency count for each word
+    for (const word of words) {
+      if (word.length > 1 && word in wordCounts) {
+        wordCounts[word] += 1;
+      } else if (word.length > 1) {
+        wordCounts[word] = 1;
       }
-      resolve(data)
-    })
-  }).then(data => {Data_base = data.split(" ")});
-}
+    }
 
-await f()
-console.log(Data_base)
-*/
+    // Find the word with the highest frequency count
+    let mostCommonWord = null;
+    let maxCount = 0;
+    for (const [word, count] of Object.entries(wordCounts)) {
+      if (count > maxCount) {
+        mostCommonWord = word;
+        maxCount = count;
+      }
+    }
+    // console.log(wordCounts)
+    // Sort the words in the object by their frequency
+    const sortedWords = Object.entries(wordCounts).sort((a, b) => b[1] - a[1]);
 
+    console.log(sortedWords);
 
+    for (const [word, count] of sortedWords) {
+      console.log(`'${word}' appears ${count} times.`);
+    }
 
-
-// writeFile is an asynchronous function
-// writeFile takes 3 arguments: file name, data, callback function
-// callback function takes 1 argument: error
-
-// writeFile('writeme.txt', 'Goodbye world~', (err) => {
-//     if (err){
-//         console.log(err);
-//     } 
-//     console.log('Write operation completed');
-//     }
-// );
-
-
-// // appendFile is an asynchronous function
-// // appendFile takes 3 arguments: file name, data, callback function
-// // callback function takes 1 argument: error
-
-// appendFile('writeme1.txt', '\n \t\ \t Hello World!', (err) => {
-//     if (err){
-//         console.log(err);
-//     } 
-//     console.log('Append operation completed');
-//     }
-// );
-
-
-
-// Q.1: split the data from readme in to an array of substrings (words). and print it!
+    console.log(`The most common word is '${mostCommonWord}' with a frequency of ${maxCount}.`);
+  }
+});
 
 
