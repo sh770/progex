@@ -1,0 +1,11 @@
+body {
+    background-color: black;
+    color: deeppink;
+    direction: rtl;
+    justify-content: center;
+    display: flex;
+    margin-right: 35px;
+    padding-top: 10%;
+    text-align: center;
+
+}
