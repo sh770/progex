@@ -11,7 +11,7 @@ bscript.setAttribute("crossorigin", "anonymous");
 document.head.appendChild(bscript);
 
 let dscript = document.createElement("script");
-dscript.setAttribute("src","dark-mode2.js");
+dscript.setAttribute("src","dark_mode2.js");
 dscript.setAttribute("defer", "");
 
 document.head.appendChild(dscript);
