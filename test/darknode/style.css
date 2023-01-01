@@ -1,0 +1,44 @@
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+  body{         
+    text-align:center; 
+    } 
+    /* img{ 
+        height:140px; 
+        width:140px;  
+    }  */
+    h1{ 
+    color: #000; 
+    margin-top: 50px;
+    } 
+    .mode { 
+        float:right; 
+        margin-top: 20px;
+        margin-right: 20px;
+    } 
+    .change { 
+        cursor: pointer; 
+        border: 1px solid #555; 
+        border-radius: 10%; 
+        width: 20px; 
+        text-align: center; 
+        padding: 8px; 
+        margin-left: 8px; 
+    } 
+    .dark{ 
+        background-color: black; 
+        color: white; 
+    }
+  .dark h1{ 
+    color: white;         
+    } 
