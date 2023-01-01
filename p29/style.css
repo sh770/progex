@@ -1,0 +1,42 @@
+#hw {
+    height: 200px;
+    width: 200px;
+    background-color: greenyellow;
+    border: 3px solid red;
+    position: absolute;
+    top: 00px;
+
+}
+
+#hw1 {
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    border: 3px solid black;
+    position: absolute;
+    top: 250px;
+    display: none;
+
+}
+
+#hw2 {
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    border: 3px solid black;
+    position: absolute;
+    top: 480px;
+
+
+
+}
+
+#div2 {
+    top: 230px;
+    position: absolute;
+}
+
+#hw3 {
+    top: 200px;
+    position: absolute;
+}
