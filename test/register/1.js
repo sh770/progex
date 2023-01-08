@@ -25,7 +25,7 @@ async function get_users8() {
 get_users8()
     // console.log(data);
 
-    let userName = "Bo5b";
+    let userName = "Bob";
 
 function reg_user(){
     // userName = document.getElementById("username").value;
@@ -33,7 +33,7 @@ function reg_user(){
     let checkIfExist = data.users.filter((newUser) => newUser.name == userName);
     // console.log(checkIfExist[0].name);
     try{
-        (checkIfExist[0].name == undefined)
+        checkIfExist[0].name == undefined;
          console.log("name exist");
         //   throw("name exist");
         }
